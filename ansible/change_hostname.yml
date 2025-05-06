@@ -1,0 +1,8 @@
+---
+- name: Change hostname
+  hosts: lab2
+  become: yes
+  tasks:
+    - name: Set hostname
+      hostname:
+        name: "ostap-hirniak-lab2"
